@@ -7,8 +7,10 @@ public class SecondClass {
         SecondClass obj = new SecondClass();
         obj.input_x();
         obj.input_y();
-        System.out.print("value_x:"+obj.x);
-        System.out.print("value_y:"+obj.y);
+        obj.score_calcurate(obj.x,obj.y);
+        System.out.print("value_score:"+obj.score);
+        //System.out.print("value_y:"+obj.y);
+
     }
     public void input_x(){
         Scanner scanner = new Scanner(System.in);
@@ -16,12 +18,14 @@ public class SecondClass {
         x=scanner.nextInt();
     }
     public void input_y(){
+        int y = 2;
         Scanner scanner = new Scanner(System.in);
         System.out.print("input_y:");
-        y=scanner.nextInt();
+        this.y=scanner.nextInt(); //this.y = การเรียกใช้ แอตทิบิ้ว y
+        this.y = this.y+y; // y เฉยๆ ตัวแปร y ที่มีค่าเป็น 2
     }
-    private void score_calcurate(){
-        System.out.println("score_calcurate");
+    private void score_calcurate(int c,int d){
+        score =c + d;
     }
     private void condition(){
         System.out.println("condition");
