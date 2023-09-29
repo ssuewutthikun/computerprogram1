@@ -4,13 +4,13 @@ public class SecondClass {
     public int y; 
     private  int score;
     public static void main(String[] args) {
+        String rsp;
         SecondClass obj = new SecondClass();
         obj.input_x();
         obj.input_y();
         obj.score_calcurate(obj.x,obj.y);
-        System.out.print("value_score:"+obj.score);
-        //System.out.print("value_y:"+obj.y);
-
+        rsp =obj.condition(obj.score);
+        obj.display(rsp);
     }
     public void input_x(){
         Scanner scanner = new Scanner(System.in);
@@ -27,10 +27,16 @@ public class SecondClass {
     private void score_calcurate(int c,int d){
         score =c + d;
     }
-    private void condition(){
-        System.out.println("condition");
+    private String condition(int cd){
+        String result;
+        if(cd >= 10){
+            result = "Result over more than 10";
+        }else{
+            result = "Result less than 10";
+        }
+        return result;
     }
-    public void display(){
-        System.out.println("display");
+    public void display(String msg){
+        System.out.println(msg);
     }
 }
