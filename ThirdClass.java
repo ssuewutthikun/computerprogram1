@@ -6,9 +6,12 @@ public class ThirdClass {
     public char mode;
     public static void main(String[] args) {
         System.out.println("Hi ThirdClass");
+        ThirdClass obj = new ThirdClass();
+        obj.input_x();
+        obj.input_y();
+        obj.input_mode();
         //1.ให้นักศึกษาเรียกใช้งาน method input_x และ input_y และ
         //input_mode จากนั้นให้แสดงผลลัพธ์ที่รับมาทางหน้าจอ (10)
-    
     }
     public void input_x(){
         Scanner scanner = new Scanner(System.in);
@@ -29,4 +32,3 @@ public class ThirdClass {
     //สร้าง method ที่รับค่า Y int  ชื่อ input_y
     //สร้าง method ที่รับค่า mode char ชื่อ input_mode
 }
-
