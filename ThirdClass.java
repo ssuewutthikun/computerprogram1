@@ -1,13 +1,10 @@
 //section-1	ข้อสอบปฏิบัติภาคทฤษฎี (กลางภาค) 10 คะแนน
         /***
-         * 5.ให้นักศึกษา เขียนการทำงานภายใน select_mode 
-         * ให้รับค่า mode , x ,y
-         * แบบ SWICH CASE
-         * กำหนดให้ ถ้า mode เป็น 
-         * A ให้แสดงข้อความ ว่า ADD และแสดงค่า x y
-         * S ให้แสดงข้อความ ว่า SUB และแสดงค่า x y
-         * M ให้แสดงข้อความ ว่า MUL และแสดงค่า x y
-         * D ให้แสดงข้อความ ว่า DIV และแสดงค่า x y   
+         * 6.ให้นักศึกษา สร้าง method  
+         * 6.1 สร้าง method ที่ชื่อ addMethod โดยมี access เป็น private  และเป็น method ที่ คืนค่า double เป็น 0.0
+         * 6.2 สร้าง method ที่ชื่อ subMethod โดยมี access เป็น private  และเป็น method ที่ คืนค่า double เป็น 0.0
+         * 6.3 สร้าง method ที่ชื่อ mulMethod โดยมี access เป็น public  และเป็น method ที่ คืนค่า double เป็น 0.0
+         * 6.4 สร้าง method ที่ชื่อ divMethod โดยมี access เป็น public  และเป็น method ที่ คืนค่า double เป็น 0.0
         **/
 import java.util.Scanner; 
 public class ThirdClass {
@@ -57,4 +54,16 @@ public class ThirdClass {
         }
     }
 
+    private double addMethod(){
+        return 0.0;
+    }
+    private double subMethod(){
+        return 0.0;
+    }
+    private double mulMethod(){
+        return 0.0;
+    }
+    private double divMethod(){
+        return 0.0;
+    }
 }
