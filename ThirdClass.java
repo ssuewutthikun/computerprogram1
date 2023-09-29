@@ -10,8 +10,15 @@ public class ThirdClass {
         obj.input_x();
         obj.input_y();
         obj.input_mode();
-        //1.ให้นักศึกษาเรียกใช้งาน method input_x และ input_y และ
-        //input_mode จากนั้นให้แสดงผลลัพธ์ที่รับมาทางหน้าจอ (10)
+        obj.select_mode(obj.mode);
+        /***
+         * 3.ให้นักศึกษา เขียนการทำงานภายใน select_mode แบบ SWICH CASE
+         * กำหนดให้ ถ้า mode เป็น 
+         * A ให้แสดงข้อความ ว่า ADD
+         * S ให้แสดงข้อความ ว่า SUB
+         * M ให้แสดงข้อความ ว่า MUL
+         * D ให้แสดงข้อความ ว่า DIV   
+        **/
     }
     public void input_x(){
         Scanner scanner = new Scanner(System.in);
@@ -26,9 +33,11 @@ public class ThirdClass {
     public void input_mode(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("input_mode:");
-        mode=scanner.nextInt();
+        mode = scanner.next().charAt(0);
     }
-    //สร้าง method ที่รับค่า X int  ชื่อ input_x  
-    //สร้าง method ที่รับค่า Y int  ชื่อ input_y
-    //สร้าง method ที่รับค่า mode char ชื่อ input_mode
+    public void select_mode(char m){
+        //master code
+        System.out.print(m);
+    }
+
 }
