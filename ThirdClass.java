@@ -38,7 +38,22 @@ public class ThirdClass {
     }
     public void select_mode(char m){
         //master code
-        System.out.print(m);
+        switch (mode) {
+            case 'A':
+                System.out.println("ADD ");
+                break;
+            case 'S':
+                System.out.println("SUB ");
+                break;
+            case 'M':
+                System.out.println("MUL ");
+                break;
+            case 'D':
+               System.out.println("DIV ");
+                break;
+            default :
+                System.out.println("Invalid mode selected");  // ถ้าใส่ข้อความไม่ถูก
+        }
     }
 
 }
