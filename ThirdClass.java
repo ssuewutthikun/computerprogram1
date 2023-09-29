@@ -12,7 +12,8 @@ public class ThirdClass {
         obj.input_mode();
         obj.select_mode(obj.mode);
         /***
-         * 3.ให้นักศึกษา เขียนการทำงานภายใน select_mode แบบ SWICH CASE
+         * 3.เอา code จาก gitHub ไฟล์ ThirdClass.java มารัน
+         * 4.ให้นักศึกษา เขียนการทำงานภายใน select_mode แบบ SWICH CASE
          * กำหนดให้ ถ้า mode เป็น 
          * A ให้แสดงข้อความ ว่า ADD
          * S ให้แสดงข้อความ ว่า SUB
