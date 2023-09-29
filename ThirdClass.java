@@ -1,4 +1,4 @@
-//section-1	ข้อสอบปฏิบัติภาคทฤษฎี (กลางภาค) 10 คะแนน
+//section-1	ข้อสอบปฏิบัติภาคทฤษฎี (กลางภาค) 10 คะแนน 
 import java.util.Scanner; 
 public class ThirdClass {
     public int x;
