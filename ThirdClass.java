@@ -1,4 +1,14 @@
-//section-1	ข้อสอบปฏิบัติภาคทฤษฎี (กลางภาค) 10 คะแนน 
+//section-1	ข้อสอบปฏิบัติภาคทฤษฎี (กลางภาค) 10 คะแนน
+        /***
+         * 5.ให้นักศึกษา เขียนการทำงานภายใน select_mode 
+         * ให้รับค่า mode , x ,y
+         * แบบ SWICH CASE
+         * กำหนดให้ ถ้า mode เป็น 
+         * A ให้แสดงข้อความ ว่า ADD และแสดงค่า x y
+         * S ให้แสดงข้อความ ว่า SUB และแสดงค่า x y
+         * M ให้แสดงข้อความ ว่า MUL และแสดงค่า x y
+         * D ให้แสดงข้อความ ว่า DIV และแสดงค่า x y   
+        **/
 import java.util.Scanner; 
 public class ThirdClass {
     public int x;
@@ -10,16 +20,7 @@ public class ThirdClass {
         obj.input_x();
         obj.input_y();
         obj.input_mode();
-        obj.select_mode(obj.mode);
-        /***
-         * 3.เอา code จาก gitHub ไฟล์ ThirdClass.java มารัน
-         * 4.ให้นักศึกษา เขียนการทำงานภายใน select_mode แบบ SWICH CASE
-         * กำหนดให้ ถ้า mode เป็น 
-         * A ให้แสดงข้อความ ว่า ADD
-         * S ให้แสดงข้อความ ว่า SUB
-         * M ให้แสดงข้อความ ว่า MUL
-         * D ให้แสดงข้อความ ว่า DIV   
-        **/
+        obj.select_mode(obj.mode,obj.x,obj.y);
     }
     public void input_x(){
         Scanner scanner = new Scanner(System.in);
@@ -36,20 +37,20 @@ public class ThirdClass {
         System.out.print("input_mode:");
         mode = scanner.next().charAt(0);
     }
-    public void select_mode(char m){
+    public void select_mode(char m,int inp_x,int inp_y){
         //master code
         switch (mode) {
             case 'A':
-                System.out.println("ADD ");
+                System.out.println("ADD "+inp_x+" "+inp_y);
                 break;
             case 'S':
-                System.out.println("SUB ");
+                System.out.println("SUB "+inp_x+" "+inp_y);
                 break;
             case 'M':
-                System.out.println("MUL ");
+                System.out.println("MUL "+inp_x+" "+inp_y);
                 break;
             case 'D':
-               System.out.println("DIV ");
+               System.out.println("DIV "+inp_x+" "+inp_y);
                 break;
             default :
                 System.out.println("Invalid mode selected");  // ถ้าใส่ข้อความไม่ถูก
